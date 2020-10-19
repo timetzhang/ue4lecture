@@ -1,4 +1,6 @@
-### 1.	关卡设计师入门
+# UE4 课程
+
+## 1.	关卡设计师入门
 
 打开 /Content/StarterContent/Maps/StarterMap
 
@@ -16,7 +18,8 @@
 
 https://docs.unrealengine.com/zh-CN/Engine/QuickStart/index.html
 
-### 2.	蓝图的Hello World
+
+## 2.	蓝图的Hello World
 
 了解：BoxTrigger, Events
 
@@ -26,31 +29,49 @@ https://docs.unrealengine.com/zh-CN/Engine/QuickStart/index.html
 
 作业：灭火人
 
+--------------------------
 
-### 3.	Physics 物理系统
+## 3.	使用蓝图控制
 
-创建一个新工程，来做一个滚动的球
+创建一个新“空工程”，来做一个滚动的球
 
-了解：Simulate Physics
+* 创建一个灯光控制 (Actor)
+  * 回忆：Box Collision
+  * 创建一个地板按钮
+  * 控制灯光开关
+    * 了解：注释
+  * 控制灯光颜色
 
-了解：Gravity 重力
+* 创建一个玩家可以控制的滚动的球 (Pawn)
+  * 创建一个Pawn蓝图, 并在蓝图里创建一个有物理系统的球体(Sphere)
+    * 了解：Material 材质
+    * 了解：Simulate Physics 模拟物理
+    * 了解：Gravity 重力
+    * 了解：Linear Damping 线性阻尼 / Angular Damping 角阻尼
+    * 了解：MassInKg 质量(千克)
+  * 创建一个GameMode, "RollingGameMode".
+    * 了解：World Settings -> Game Mode
+  * Mouse Input
+    * Mouse X
+    * Mouse Y
+    * Left Button / Right Button / Wheel
+    * 了解：Make Vector (3D向量)
+    * 了解：Add Torque (扭矩)
+  * Keyboard Input 
+    * Space
+    * Ctrl / Shift / Command / Alt
+    * A~Z
+    * 了解：Set Velocity (速度)
+ 
+* 创建一个秒表
+  * Text Render
+  * Event BeginPlay (开始时只运行一次)
+  * Event Tick (运行过程中不断执行)
+  * 变量 (Float, Integer, String, Boolean, Vector)
+  * Delay
 
-了解：Linear Damping 线性阻尼 / Angular Damping 角阻尼
-
-
-### 4.	使用蓝图控制
-* Event BeginPlay
-* Event Tick
-* 控制Text Render
-* 秒表 / Delay
-* 创建一个Pawn
-* Enable Input
-* Keybord Input / Move Forward / Move Right
-* Make Vector / Add Torque （一点点数学）
-* 控制灯光开关（IF的使用）
-* 控制灯光颜色
 * Spawn
-* Random 随机
+  * Random 随机
 
 
 ### 5.	发射小人
